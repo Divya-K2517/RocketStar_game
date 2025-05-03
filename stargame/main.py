@@ -28,12 +28,12 @@ floor_image = pygame.transform.scale(floor_image, (TILESIZE*15, TILESIZE*5))
 floor_rect = floor_image.get_rect(bottomleft = (0, screen.get_height()))
 
 # rocket
-rocket_image = pygame.image.load('stargame/assets/rocket_static.png').convert_alpha() #convert alpha line optimizes the image in pygame
+rocket_image = pygame.image.load('stargame/assets/player_static.png').convert_alpha() #convert alpha line optimizes the image in pygame
 rocket_image = pygame.transform.scale(rocket_image, (TILESIZE, TILESIZE*(1.356467))) #paratheses is a tuple w the size of the rocket, in thise case tile size is a constant
 rocket_rect = rocket_image.get_rect(center = (screen.get_width()/2, screen.get_height() - floor_image.get_height() - (rocket_image.get_height()/2))) #places the rocket at the center. To make center it does the height of the screen minus the height of the floor, minus half the height of the rocket
 
 #star
-star_image = pygame.image.load('stargame/assets/star.png').convert_alpha()
+star_image = pygame.image.load('stargame/assets/apple4444.png').convert_alpha()
 star_image = pygame.transform.scale(star_image, (TILESIZE, TILESIZE))
 
 stars = [
